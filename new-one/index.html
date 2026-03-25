@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="icon" type="img/jpg/png/svg" href="img/cofffe_icon-removebg-preview.png">
+    <link rel="stylesheet" href="style.css">
+    <title>Coffee House</title>
+</head>
+<body>
+    <div class="hero">
+        
+        <form method="post">
+            <div class="logo-text">
+            <h1>Login</h1>
+            <img src="imgs/pngtree-cafe-logo-removebg-preview.png" alt="coffee">
+            </div>
+            <div class="input-group">
+               
+                <input id="username" type="text" placeholder="Username" required>
+                 <div class="icons">
+                    <i class='bx bxs-user'></i>
+                </div>
+                </div>
+            <div class="input-group">
+               
+                <input id="password" type="password" placeholder="Password" required>
+                 <div class="icons">
+                    <i class='bx bxs-lock-alt'></i>
+                </div>
+                </div>
+                <div class="remember-forgot">
+                    <div class="remember">
+                        <label for="remember"><input type="checkbox" id="remember">Remember me</label>
+                    </div>
+                    <div class="forgot">
+                        <a href="#">Forgot Password?</a>
+                    </div>
+                </div>
+                <button type="button" class="btn" onclick="login()">Login</button>
+                <p class="register">Don't have an account? <a href="#">Register</a></p>
+                <div id="text-show">
+                </div>
+        </form>
+    </div>
+</body>
+<script src="script.js"></script>
+</html>

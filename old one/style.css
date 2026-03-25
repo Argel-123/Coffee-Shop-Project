@@ -1,0 +1,207 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,200..800&family=Lobster&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    
+    
+}
+:root{
+    /* ====== Colors ======== */
+    --bg-color: #8C5A3C;
+    --bg-second-color: #C08552;
+    --font-color: #8A7650;
+    --font-second-color:#4B2E2B;
+    --font-color-third: #fff;
+
+    /* ======= fonts ======== */
+    --font-family: 'Lobster';
+    --font-familys: 'Montserrat';
+
+    /* ====== font size ======== */
+    --font-size: 1.4rem;
+    --font-main-size: 30px;
+    --p-size: 10px;
+    
+    /* ======== Transitions ======== */
+    --trasition-one: 0.5s;
+    --transition-two: 0.3s;
+}
+body{
+    background: #fff;
+    height: 100vh;
+}
+.hero{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: var(--bg-second-color);
+}
+.hero .Tiltle{
+    width: 100%;
+    height: 40px;
+    text-align: center;
+    margin-bottom: 30px;
+    font-size: var(--font-size);
+    font-family: var(--font-family);
+    color: var(--font-second-color);
+    letter-spacing: 2px;
+    
+}
+
+form{
+    width: 100%;
+    height: 60vh;
+    margin-bottom: -190px;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    background: var(--bg-color);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+form .logo{
+    margin: 2px auto;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+form .text-logo{
+    font-family: 'Montserrat',sans-serif;
+    font-size: var(--font-main-size);
+    font-weight: 790;
+    text-transform: uppercase;
+    color: var(--font-color-third);
+    margin: 3px;
+
+}
+form .logo img{
+    width: 20%;
+    height: auto;
+}
+form .inputs{
+    width: 100%;
+    padding: 32px;
+}
+.inputs .input-boxes{
+    position: relative;
+    margin: 10px auto;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 30px;
+}
+.input-boxes input{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    background: var(--bg-second-color);
+    border: 1px solid var(--bg-second-color);
+    outline: none;
+    padding: 15px 10px;
+    border-radius: 3px;
+    cursor: pointer;
+    color: var(--font-color-third);
+    font-size: 1em;
+}
+.input-boxes input::placeholder{
+    color: var(--font-color-third);
+    font-size: 0.9rem;
+    letter-spacing: 2px;
+}
+.input-boxes .icons{
+    position: absolute;
+    top: 0;
+    right: 6%;
+    transform: translateY(50%);
+    color: var(--font-color-third);
+}
+.Remember-Forgot{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-family: 'Montserrat',sans-serif;
+}
+.remember p{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 14px;
+    cursor: pointer;
+    color: var(--font-color-third);
+}
+.remember p .check{
+    border: none;
+    outline: none;
+}
+.forgot a{
+    text-decoration: none;
+    font-size: 14px;
+    color: var(--font-color-third);
+    cursor: pointer;
+}
+.forgot a:hover{
+    color: var(--bg-second-color);
+}
+.btn{
+    width: 100%;
+    height: 30px;
+    border-radius: 20px;
+    border: none;
+    outline: none;
+    margin-top: 10px;
+    background: var(--font-color);
+    color: var(--font-color-third);
+    font-size: 16px;
+    font-weight: 545;
+    cursor: pointer;
+    transition: var(--trasition-one);
+}
+.btn:hover{
+    background:var(--bg-second-color);
+}
+
+
+.account{
+    margin-top: 10px ;
+    text-align: center;
+    color: var(--font-color-third);
+    font-family: 'Montserrat',sans-serif;
+    font-size: 15px;
+}
+
+.account a{
+    text-decoration: none;
+    color: var(--font-color-third);
+}
+.account a:hover{
+    color: var(--bg-second-color);
+}
+#text-show{
+    position: relative;
+    display: flex;
+    justify-content: center; 
+    align-items: center;
+    width: 100%;
+    background-color: #8A7650;
+    color: white;
+    height: 30px;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 14px;
+}
+
+
+
+
+

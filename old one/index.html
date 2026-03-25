@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="style.css">
+    <title>Coffee Shop</title>
+</head>
+<body>
+    <div class="hero">
+        <div class="Tiltle">
+            <h1>Coffee App</h1>
+        </div>
+        <form>
+            <div class="logo">
+                <h3 class="text-logo">Login</h3>
+                <img src="img/coffee_logo-removebg-preview.png" alt="">
+            </div>
+
+            <div class="inputs">
+                <div class="input-boxes">
+                    <input type="text" placeholder="Username" name="Username" id="username">
+                    <div class="icons">
+                        <i class='bx bxs-user'></i>
+                    </div>
+                </div>
+                <div class="input-boxes">
+                    <input type="password" placeholder="Password" name="Password" id="password" >
+                    <div class="icons">
+                        <i class='bx bxs-lock-alt' ></i>
+                    </div>
+                </div>
+                <div class="Remember-Forgot">
+                    <div class="remember">
+                        <p id="remember"><input class="check" type="checkbox" name="remember" id="remember">Remember me</p>
+                    </div>
+                    <div class="forgot">
+                        <a href="#">Forgot Password?</a>
+                    </div>
+                </div>
+
+                <input class="btn" type="submit" onclick="Login()" value="Login">
+                <p class="account">Don't have an account? <a href="#">Signup</a></p>
+                <div id="text-show">
+
+                </div>
+            </div>
+        </form>
+    </div>
+</body>
+<script src="script.js"></script>
+</html>

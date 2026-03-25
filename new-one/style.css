@@ -1,0 +1,211 @@
+* {
+padding: 0;
+margin: 0;
+box-sizing: border-box;
+font-family: 'Montserrat', sans-serif;
+}
+:root{
+    --bg-color: #8C5A3C;
+    --bg-second-color: #C08552;
+    --font-color: #8A7650;
+    --font-second-color:#4B2E2B;
+    --font-color-third: #fff;
+
+    /* ======= fonts ======== */
+    --font-family: 'Lobster';
+    --font-familys: 'Montserrat';
+
+    /* ====== font size ======== */
+    --font-size: 1em;
+    --font-main-size: 30px;
+    --p-size: 10px;
+    
+    /* ======== Transitions ======== */
+    --trasition-one: 0.5s;
+    --transition-two: 0.3s;
+}
+body{
+height: 100vh;
+}
+.hero{
+    background: url(imgs/cafebackground.jpg) no-repeat center center/cover;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.hero::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0);
+}
+
+.hero form{
+    width: 50%;
+    height: 60%;
+    background: var(--bg-color);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: transparent;
+    border: 2px solid var(--bg-second-color);
+    backdrop-filter: blur(10px);
+    border-radius: 30px;
+}
+form .logo-text{
+    position: relative;
+    top: -15px;
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: var(--font-size);
+}
+form .logo-text img{
+    width: 60px;
+    height: 20px auto;
+}
+form .logo-text h1{
+    font-size: var(--font-main-size);
+    color: var(--font-color-third);
+    font-weight: 600;
+    text-transform: uppercase;
+}
+.input-group{
+    position: relative;
+    width: 70%;
+    height: 40px;
+    margin: 5px auto;
+}
+.input-group input{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    background: transparent;
+    border-radius: 10px;
+    border: 2px solid var(--bg-second-color);
+    color: var(--font-color-third);
+    font-size: var(--p-size);
+    padding: 10px 10px;
+    outline: none;
+    font-size: 13px;
+}
+
+.input-group input::placeholder{
+    color: var(--font-color-third);
+    letter-spacing: 1px;
+    font-weight: 300;
+    font-size: 12px;
+}
+.input-group input:focus{
+    border-color: var(--font-color-third);
+}
+.input-group .icons{
+    position: absolute;
+    top: 50%;
+    right: 10px;
+    transform: translateY(-50%);
+    color: var(--font-color-third);
+}
+.remember-forgot{
+    padding: 5px;
+    width: 70%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 15px 15px 15px 0;
+}
+.remember label{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--font-color-third);
+    font-size: 15px;
+    cursor: pointer;
+}
+.forgot a{
+    text-decoration: none;
+    color:var(--font-color-third);
+    font-size: 15px;
+    transition: var(--trasition-one);
+}   
+.forgot a:hover{
+    color: var(--font-color);
+}
+button{
+    width: 70%;
+    height: 40px;
+    background: var(--bg-second-color);
+    border: none;
+    color: var(--font-color-third);
+    font-size: 15px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: var(--transition-two);
+}
+button:hover{
+    background: var(--font-color-third);
+    color: var(--bg-second-color);
+}
+button:active{
+    transform: scale(0.9);
+}
+p{
+    margin-top: 10px;
+    color: var(--font-color-third);
+    font-size: 15px;
+}
+p a{
+    text-decoration: none;
+    color: var(--font-color-third);
+    font-weight: 500;
+    transition: var(--transition-two);
+}
+p a:hover{
+    color: var(--font-color);
+}
+#text-show{
+    margin-top: 10px;
+    width: 100%;
+    height: 6px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+@media (max-width: 768px){
+    .hero form{
+        width: 96%;
+        height: 68%;
+    }
+    .input-group{
+        width: 90%;
+        height: 10%;
+    }
+    form .logo-text h1  {
+        font-size: 34px;
+    }
+    form .logo-text img{
+        width: 70px;
+        height: 90px auto;
+    }
+    .remember-forgot{
+        width: 90%;
+    }
+    button{
+        width: 90%;
+        height: 10%;
+    }
+    #text-show{
+        width: 90%;
+        font-size: 13px;
+    }
+}
+
